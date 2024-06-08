@@ -1,1 +1,7 @@
-puts "Hello world ohayo".length
+"ようこそ！名前を入力してください"
+  name = "タロウ"
+
+"秒数を知りたい時間を分単位で入力してください"
+minutes = 5
+
+"#{name}さん、#{minutes}分は#{minutes * 60}秒です！"
