@@ -7,5 +7,6 @@ minutes = 5
 "#{name}さん、#{minutes}分は#{minutes * 60}秒です！"
 
 pencil_case = ["pen","消しゴム","定規"]
+pencil_case << "えんぴつ"
 
 puts pencil_case
