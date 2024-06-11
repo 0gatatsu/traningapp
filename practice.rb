@@ -10,3 +10,9 @@ pencil_case = ["pen","消しゴム","定規"]
 pencil_case << "えんぴつ"
 
 puts pencil_case
+
+student = { "name" => "John", "age" => 10 }
+teacher = { name: "Mike", age: 25 }
+
+puts student
+puts teacher
