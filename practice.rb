@@ -16,3 +16,11 @@ teacher = { name: "Mike", age: 25 }
 
 puts student
 puts teacher
+
+value = -1
+
+if value > 0
+  puts "値は正です"
+else
+  puts "値は負です"
+end
