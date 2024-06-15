@@ -30,3 +30,8 @@ end
 23.times do |i|
   puts i + 1
 end
+
+color = ["あか","あお", "きいろ"]
+color.each do |color|
+  puts "色: #{color}"
+end
