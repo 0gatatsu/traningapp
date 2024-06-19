@@ -1,51 +1,27 @@
-"ようこそ！名前を入力してください"
-  name = "タロウ"
+ride_count = 0
 
-"秒数を知りたい時間を分単位で入力してください"
-minutes = 5
-
-"#{name}さん、#{minutes}分は#{minutes * 60}秒です！"
-
-pencil_case = ["pen","消しゴム","定規"]
-pencil_case << "えんぴつ"
-
-puts pencil_case
-
-student = { "name" => "John", "age" => 10 }
-teacher = { name: "Mike", age: 25 }
-
-puts student
-puts teacher
-
-value = gets.to_i
-
-if value > 0
-  puts "値は正です"
-elsif value < 0
-  puts "値は負です"
-else
-  puts "値は0です"
+def add_friend(list)
+  friend = {}
+  puts "お友達の名前は？"
+  friend[:name] = gets.chomp
+  puts "お友達の身長は？"
+  friend[:height] = gets.to_i
+  list << friend
 end
 
-12.times do |i|
-  puts i + 1
+friends = []
+
+3.times do
+  friends = add_friend(friends)
 end
 
-color = ["あか","あお", "きいろ"]
-color.each do |color|
-  puts "色: #{color}"
+friends.each do |friend|
+  if friend[:height] >= 130
+    puts "#{friend[:name]}くんは乗車できます"
+    ride_count += 1
+  else
+    puts "#{friend[:name]}くんは乗車できません！"
+  end
 end
 
-def say_hello
-  puts "Hello world"
-end
-
-def mixer(fruit)
-  puts "#{fruit}を細かく砕く"
-  return"#{fruit}ジュース"
-end
-
-puts "フルーツを入力してください"
-input = gets.chomp
-
-puts mixer(input)
+puts "乗車するのは#{ride_count}人です"
