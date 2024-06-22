@@ -1,6 +1,5 @@
-class Car
+student = { "name" => "John", "age" => 10 }
+teacher = { name: "Mike", age: 25 }
 
-end
-
-fire_truck = Car.new
-puts fire_truck
+puts student
+puts teacher
